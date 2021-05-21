@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPattern": "/api/example",
+        "bodyPatterns" : [
+            {
+                "matchesJsonPath" : "$.cpf"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "post_example/post_200_example_response.json"
+    },
+    "priority": 1
+}

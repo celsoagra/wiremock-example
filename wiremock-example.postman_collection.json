@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "c6e4f344-8230-49b1-b36f-c8d6e4f24f3f",
+		"name": "wiremock-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_200",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/example/222222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"example",
+						"222222"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_400",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_404",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/example/1111111111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"example",
+						"1111111111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_200",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"2222222\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_404",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"1111111111\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"example"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_400",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/example",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"example"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

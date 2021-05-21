@@ -1,0 +1,11 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPattern": "/api/example"
+    },
+    "response": {
+        "status": 400,
+        "bodyFileName": "post_example/post_400_example_response.json"
+    },
+    "priority": 10
+}

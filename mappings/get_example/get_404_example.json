@@ -1,0 +1,11 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/api/example/1111111111"
+    },
+    "response": {
+        "status": 404,
+        "bodyFileName": "get_example/get_404_example_response.json"
+    },
+    "priority": 1
+}

@@ -1,0 +1,16 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPattern": "/api/example",
+        "bodyPatterns" : [
+            {
+                "matchesJsonPath" : "$[?(@.cpf == '1111111111')]"
+            }
+        ]
+    },
+    "response": {
+        "status": 404,
+        "bodyFileName": "post_example/post_404_example_response.json"
+    },
+    "priority": 0
+}
